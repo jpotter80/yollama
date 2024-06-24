@@ -7,27 +7,28 @@ Yollama is a web-based user interface for interacting with locally installed Oll
 - Automatic detection of locally installed Ollama models
 - Model selection via dropdown menu
 - Text input for prompts
-- Display area for model responses
+- Real-time streaming of model responses
 - Copy response functionality
 - Regenerate response option
+- Dark mode toggle
 
 ## Tech Stack
 
 - [Deno](https://deno.land/) - A secure runtime for JavaScript and TypeScript
 - [Fresh](https://fresh.deno.dev/) - The next-gen web framework for Deno
+- [Preact](https://preactjs.com/) - Fast 3kB alternative to React with the same modern API
 - [Twind](https://twind.dev/) - The smallest, fastest, most feature complete Tailwind-in-JS solution
-- [JSR](https://jsr.io/) - JavaScript Registry for Deno
 
 ## Prerequisites
 
-- [Deno](https://deno.land/#installation) v1.44.4 or higher
+- [Deno](https://deno.land/#installation) v1.34.0 or higher
 - [Ollama](https://ollama.ai/) installed and running locally
 
 ## Installation
 
 1. Clone the repository:
    ```
-   git clone https://github.com/jpotter80/yollama.git
+   git clone https://github.com/yourusername/yollama.git
    cd yollama
    ```
 
@@ -50,8 +51,17 @@ Yollama is a web-based user interface for interacting with locally installed Oll
 1. Select an Ollama model from the dropdown menu
 2. Enter your prompt in the text input field
 3. Click "Submit" to generate a response
-4. Use the copy button to copy the response to your clipboard
-5. Use the regenerate button to generate a new response for the same prompt
+4. Use the "Copy" button to copy the response to your clipboard
+5. Use the "Regenerate" button to generate a new response for the same prompt
+6. Toggle between light and dark modes using the mode switch button
+
+## Project Structure
+
+- `routes/index.tsx`: Main page component
+- `islands/OllamaInteraction.tsx`: Interactive component for model interaction
+- `routes/api/models.ts`: API route for fetching available models
+- `routes/api/generate.ts`: API route for generating responses
+- `twind.config.ts`: Twind configuration for styling
 
 ## Contributing
 
@@ -60,10 +70,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Author
-
-jpotter80 (jpotter80@proton.me)
 
 ## Acknowledgments
 
