@@ -2,6 +2,9 @@
 
 Yollama is a web-based user interface for interacting with locally installed Ollama models. It provides an intuitive interface for selecting models, sending prompts, and managing responses.
 
+![Alt text](images/yollama.png)
+
+
 ## Features
 
 - Automatic detection of locally installed Ollama models
