@@ -33,7 +33,7 @@ Yollama is a simple, web-based user interface for interacting with locally insta
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/yollama.git
+   git clone https://github.com/jpotter80/yollama.git
    cd yollama
    ```
 
